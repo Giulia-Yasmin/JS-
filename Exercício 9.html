@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9 da lista 2</title>
+</head>
+<body>
+    <script>
+        var continuar = true;
+        var pares = 0;
+        var impares = 0;
+        var positivos = 0;
+        var negativos = 0;
+
+        while (continuar) {
+            var numero = parseInt(prompt("Digite um número inteiro:"));
+            if (numero % 2 === 0) {
+                pares++;
+            } else {
+                impares++;
+            }
+            if (numero > 0) {
+                positivos++;
+            } else if (numero < 0) {
+                negativos++;
+            }
+            var resposta = prompt("Deseja encerrar o programa? (S/N)");
+            if (resposta.toUpperCase() === "S") {
+                continuar = false;
+            }
+        }
+        document.write("Números Pares: " + pares + "<br>");
+        document.write("Números Ímpares: " + impares + "<br>");
+        document.write("Números Positivos: " + positivos + "<br>");
+        document.write("Números Negativos: " + negativos + "<br>");
+    </script>
+</body>
+</html>

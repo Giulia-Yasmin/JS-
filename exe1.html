@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salário</title>
+</head>
+<body>
+    <script>
+        var salário,  reajustado;
+        salário=parseFloat(prompt("digite o valor do salário:"));
+        if (salário<500){
+            reajustado=salário*1.15;
+            alert("salário novo: "+reajustado);
+        }
+        else if (salário<=1000){
+            reajustado=salário*1.10;
+            alert("salário novo: "+reajustado);
+        }
+        else if (salário>1000){
+            reajustado=salário*1.05;
+            alert("salário novo: "+reajustado);
+        }
+    </script>
+</body>
+</html>

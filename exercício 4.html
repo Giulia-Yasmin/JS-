@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercício 4</title>
+    <title>Exercício 4 da lista 2</title>
 </head>
 <body>
+    <h1> QUANTIDADE DE NÚMEROS ÍMPAR EXISTENTE: </h1>
     <script>
-        var A,B,C, res;
-        A=parseFloat(prompt("digite o valor de A:"));
-        B=parseFloat(prompt("digite o valor de B:"));
-        C=parseFloat(prompt("digite o valor de C:"));
-        res=(A*A)*5-C/(B-A%4);
-        alert("o cálculo é igual a:"+res); 
+       var n1, n2;
+n1= parseInt(prompt("digite o menor número primeiro: "));
+n2= parseInt(prompt("digite o maior número por último: "));
+for (x=n1; x<=n2;++x){
+    if(x%2===1){
+    document.write(x + "<br>");
+}
+}
     </script>
 </body>
 </html>

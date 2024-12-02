@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercício 3</title>
+    <title>Exercício 3 da lista 2</title>
 </head>
 <body>
- <script>
-    var número, res;
-    número=parseFloat(prompt("digite um número inteiro:"));
-    res= número*número;
-    alert("o quadrado deste número inteiro é:"+res);
- </script>   
+    <h1>TABUADA</h1>
+    <script>
+        var tabuada, resultado;
+        tabuada= parseInt(prompt("digite um número: "));
+        for (x=1;x<=10;x++){
+            resultado=tabuada*x
+            document.write(tabuada+"x="+ resultado + "<br>");
+        }
+    </script>
 </body>
 </html>

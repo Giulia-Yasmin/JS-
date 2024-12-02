@@ -2,15 +2,31 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercício 2</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Exercício 2 da lista 2</title>
 </head>
 <body>
+    <h1>NÚMEROS ÍMPAR:</h1>
     <script>
-        var número, res;
-        número=parseFloat(prompt("digite o valor de um número inteiro:"));
-        res= 2*número;
-        alert("o dobro deste número inteiro é:"+res);
+        var x, n1, n2;
+        n1 = parseInt(prompt("digite o menor valor: "));
+        n2 = parseInt(prompt("digite o maior valor: "));
+        if (n1>n2){
+            for(x=n1;x>=n2;x--)
+            {
+                if(x%2!=0){
+                    document.write(x+"<br>");
+                }
+            }
+        }
+        else{
+            for(x=n2;x>=n1;x--)
+            {
+                if (x%2!=0){
+                    document.write(x+"<br>");
+                }
+            }
+        }
     </script>
 </body>
 </html>
